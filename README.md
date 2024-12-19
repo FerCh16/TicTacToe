@@ -9,7 +9,7 @@ This project is the classic tic tac toe game made with go.
 ## Install and run
 Clone the repo:
 ``` 
-git clone https://github.com/FerCh16/TicTacToe
+git clone https://github.com/FerCh16/TicTacToe && cd TicTacToe
 ```
 Build:
 ``` 
