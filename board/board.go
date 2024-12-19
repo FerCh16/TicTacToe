@@ -81,8 +81,9 @@ horizontal:
 	}
 
 	winner = true
-	for i := len(b) - 1; i > 0; i-- {
-		if curr != b[i][i] {
+	curr = b[0][len(b)-1]
+	for i := 0; i < len(b); i++ {
+		if curr != b[i][len(b)-1-i] {
 			winner = false
 			break
 		}
