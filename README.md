@@ -1,5 +1,5 @@
 # TIC TAC TOE in GO
-This project is the classic tic tac toe game made by go.
+This project is the classic tic tac toe game made with go.
 
 ## Preview
 
