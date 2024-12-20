@@ -10,14 +10,13 @@ import (
 )
 
 type Game struct {
-	turn int    // P1 or P2
-	mode string // PvP or PvM
+	turn int // P1 or P2
 
 	board *Board
 }
 
-func NewGame(mode string) *Game {
-	return &Game{turn: 1, mode: mode, board: new(Board)}
+func NewGame() *Game {
+	return &Game{turn: 1, board: new(Board)}
 }
 
 func (g *Game) Run() {
@@ -81,7 +80,7 @@ func HandleError(err error) {
 }
 
 func (g *Game) RenderGame() string {
-	ui := RenderUiByRows(g.turn, g.mode)
+	ui := RenderUiByRows(g.turn)
 	board := g.board.RenderByRows()
 
 	var builder strings.Builder
